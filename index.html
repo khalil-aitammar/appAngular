@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title> facebook like</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<body ng-app="MyApp">
+<div class="container-fluid">
+    <section ng-controller="headerCtrl">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="row">
+
+                <div class="col-md-2">
+
+                    <img src="https://maxcdn.icons8.com/office/PNG/40/Very_Basic/facebook-40.png" title="Facebook"
+                         width="40">
+                    <a href="#">Link</a>
+
+                </div>
+
+                <div class="col-md-8">
+                    <div class="input-group" id="barRech">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                       <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <a href=""> <img src="https://maxcdn.icons8.com/iOS7/PNG/50/Users/group-50.png" title="User Group Man Man" width="50"> </a>
+                    <a href=""> <img src="https://maxcdn.icons8.com/iOS7/PNG/50/Messaging/speech_bubble-50.png" title="Speech Bubble" width="50"></a>
+                    <a href=""><img src="https://maxcdn.icons8.com/iOS7/PNG/50/User_Interface/info_popup-50.png" title="Info Popup" width="50"></a>
+                </div>
+            </div>
+
+        </nav>
+
+    </section>
+    <section ng-controller="menuCtrl">
+        <h1>MENU</h1>
+    </section>
+    <section ng-controller="contentCtrl">
+        <h1>CONTENT</h1>
+    </section>
+    <section ng-controller="footerCtrl">
+        <h1>FOOTER</h1>
+    </section>
+</div>
+<script src="js/angular.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

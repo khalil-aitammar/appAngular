@@ -1,7 +1,21 @@
+body{
+    background-color: #e9eaed;
+}
+.imgprofil{
+    float: left;
+    border-color:#D6E5ED;
+    border-style: outset;
+    border-width: 1px;
+}
+.imgarticle{
+    max-height: 400px;
+    max-width: 300px;
+}
 
 /* style bloc du haut */
 .blochaut{
     height: 50px;
+    background-color: #e9eaed;
     -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
@@ -13,29 +27,39 @@
 }
 .navbar-default {
     background-color: #425f9c;
-    border-color: #8e44ad;
+    border-color: #dedbc8;
 }
 /* style bloc du haut */
 
 .blocmid{
     margin-top: 10px;
+    background-color: #e9eaed;
 }
 .menuvertical {
     margin-left:20px;
     height: 800px;
-    background-color: #e9eaed;
+    background-color: #fbfcff;
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+
 }
 .filactu{
     margin: 0 20px 0 20px;
-    height: 800px;
-    background-color: #f4faf1;
+    height: auto;
+    background-color: #fbfcff;
     -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
 }
 .chat{
     height: 800px;
-    background-color: #e9eaed;
+    background-color: #fbfcff;
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.article{
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    height: auto;
+    background-color: #fbfcff;
+
 }

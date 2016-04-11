@@ -1,4 +1,41 @@
-#barRech{
-    width: 250px;
 
+/* style bloc du haut */
+.blochaut{
+    height: 50px;
+    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+#barRech{
+    margin-top : 10px;
+    width: 450px;
+
+}
+.navbar-default {
+    background-color: #425f9c;
+    border-color: #8e44ad;
+}
+/* style bloc du haut */
+
+.blocmid{
+    margin-top: 10px;
+}
+.menuvertical {
+    margin-left:20px;
+    height: 800px;
+    background-color: #e9eaed;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.filactu{
+    margin: 0 20px 0 20px;
+    height: 800px;
+    background-color: #f4faf1;
+    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.chat{
+    height: 800px;
+    background-color: #e9eaed;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
 }

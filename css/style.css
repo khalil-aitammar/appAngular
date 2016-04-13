@@ -51,6 +51,7 @@ body{
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
 }
 .chat{
+    padding-top: 20px;
     height: 800px;
     background-color: #fbfcff;
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
@@ -66,25 +67,11 @@ body{
 
 /** style chat **/
 
-
-body
-{
-    background-color: #e9eaed;
+.chatP{
+margin-top: 200px;
+    width: 100%;
 }
 
-.chat-sidebar
-{
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    background-color: #fbfcff;
-    right: 0px;
-    top: 0px;
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid rgba(29, 49, 91, .3);
-}
 
 .sidebar-name
 {
@@ -119,6 +106,7 @@ body
     vertical-align:middle;
 }
 
+/** style chatbox **/
 .popup-box
 {
     display: none;
@@ -163,5 +151,6 @@ body
     height: 100%;
     overflow-y: scroll;
 }
+/** style chatbox **/
 
 /** style chat **/

@@ -68,8 +68,11 @@ body{
 /** style chat **/
 
 .chatP{
-margin-top: 200px;
+  position: relative;
+    bottom: 60px;
+
     width: 100%;
+
 }
 
 

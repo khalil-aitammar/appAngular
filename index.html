@@ -132,15 +132,18 @@
                             <div class="popup-head">
                                 <div class="popup-head-left">{{nomU}}</div>
                                 <div style="clear: both"></div>
+
                             </div>
+
                             <div class="popup-messages">
-                                <div ng-repeat="x in todoList">
+                                <div ng-repeat="x in chat">
                                     <span ng-bind="x.todoText"></span>
                                 </div>
-                                <form ng-submit="todoAdd()">
-                                    <input class="chatP" type="text" ng-model="todoInput" placeholder="Add New">
-                                </form>
+
                             </div>
+                            <form ng-submit="msgAdd()">
+                                <input class="chatP" type="text" ng-model="todoInput" >
+                            </form>
                         </div>
                         <!-- chatbox fin -->
 

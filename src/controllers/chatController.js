@@ -12,4 +12,12 @@ $scope.nameuser=['amen allah','walid','ahmed','mohamed'];
         $scope.nomU = p ;
     };
 
+    $scope.chat = [{todoText:'', done:false}];
+
+    $scope.msgAdd = function() {
+        $scope.chat.push({todoText:$scope.todoInput, done:false});
+        $scope.todoInput = "";
+    };
+
+
 });

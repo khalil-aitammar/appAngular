@@ -7,13 +7,13 @@
 <link rel="stylesheet" href="css/style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<body >
+<body ng-app="MyApp">
 <div class="container-fluid">
     <div class="row">
 
         <!-- bloc du haut -->
         <div class="col-md-12 blochaut">
-            <div ng-controller="headerCtrl">
+            <div >
                 <!-- bar de navigation   -->
                 <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -57,7 +57,7 @@
 
         <!-- bloc du mid -->
         <div class="col-md-12 blocmid">
-            <div ng-controller="contentCtrl">
+            <div>
                 <div class="row">
                     <div class="col-md-2 menuvertical">
                         <ul class="nav nav-pills nav-stacked">
@@ -93,55 +93,42 @@
 
                         </div>
                     </div>
-                    <div class="col-md-2 chat" ng-controller="chatCtrl">
+                    <div class="col-md-2 chat" ng-controller="chatCtrl" >
 
                         <!-- bar horizontal -->
 
                             <div class="sidebar-name">
-                                <a href="" ng-model="checked">
+                                <a href="" >
                                     <img width="30" height="30" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p32x32/10628437_1589529461261335_1996019418152322977_n.jpg?oh=3fc1d2d23b4689aaad514b9d1652d392&oe=57B0501F&__gda__=1467299952_953a712bb0a2612bae122b4d18ea341c" />
-                                    <span>amenlah</span>
+                                    <span >{{nameuser[0] }}</span>
                                 </a>
                             </div>
 
                             <div class="sidebar-name">
                                 <a href="">
                                     <img width="30" height="30" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p32x32/10624609_980272405354930_296235642156404677_n.jpg?oh=5cc6b247cd963a265ea5f34848476013&oe=577E9528&__gda__=1471910484_ea8bba8d1c6d9b1a0f75875f05d5628d" />
-                                    <span>walid</span>
+                                    <span>{{nameuser[1]}}</span>
                                 </a>
                             </div>
 
                             <div class="sidebar-name">
                                 <a href="">
                                     <img width="30" height="30" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/c0.6.32.32/p32x32/10402983_10209439546456698_5449745823378091882_n.jpg?oh=cdefe40b3bba1d1bea41ede39ee9cffc&oe=57BF1445&__gda__=1467491251_5ab653405ef6c3f7f4b171e4460b9b7e" />
-                                    <span>ahmed</span>
+                                    <span>{{nameuser[2]}}</span>
                                 </a>
                             </div>
 
                             <div class="sidebar-name">
                                 <a href="">
                                     <img width="30" height="30" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfl1/v/t1.0-1/p32x32/12814714_1026362114073958_400935430166012420_n.jpg?oh=7a97c6191977506f0e6ff95acaac447b&oe=5785509C&__gda__=1471359079_37ba0b6ac150bee6342ba46509dfacdf" />
-                                    <span>mohamed</span>
+                                    <span>{{nameuser[3]}}</span>
                                 </a>
                             </div>
 
                         <!-- bar horizontal fin -->
 
                         <!-- chatbox -->
-                        <div class="popup-box chat-popup" id="qnimate" ng-show="checked" style="right: 220px; display: block;">
-                            <div class="popup-head">
-                                <div class="popup-head-left">QNimate</div>
-                                <div style="clear: both"></div>
-                            </div>
-                            <div class="popup-messages">
-                                <div ng-repeat="x in todoList">
-                                    <span ng-bind="x.todoText"></span>
-                                </div>
-                                <form ng-submit="todoAdd()">
-                                    <input class="chatP" type="text" ng-model="todoInput" placeholder="Add New">
-                                </form>
-                            </div>
-                        </div>
+
                         <!-- chatbox fin -->
 
                     </div>
@@ -156,7 +143,6 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="js/chat.js"></script>
 <script src="js/angular.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="app.js"></script>
